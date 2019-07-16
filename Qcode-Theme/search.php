@@ -71,7 +71,7 @@ $bridge_qode_holder_classes[] =  'clearfix';
 			</div>	
 		<?php elseif($bridge_qode_sidebar == "1" || $bridge_qode_sidebar == "2"): ?>
 			<div class="<?php if($bridge_qode_sidebar == "1"):?>two_columns_66_33<?php elseif($bridge_qode_sidebar == "2") : ?>two_columns_75_25<?php endif; ?> background_color_sidebar grid2 clearfix">
-				<div class="column1">
+				<!--<div class="column1">-->
 					<div class="column_inner">
 						<div class="blog_holder blog_large_image <?php echo esc_attr(implode(' ', $bridge_qode_holder_classes))?>">
 							<?php if(have_posts()) : while ( have_posts() ) : the_post(); ?>
@@ -91,10 +91,7 @@ $bridge_qode_holder_classes[] =  'clearfix';
 							<?php endif; ?>
 						</div>	
 					</div>
-				</div>
-				<div class="column2">
-					<?php get_sidebar(); ?>	
-				</div>
+				<!--</div>-->
 			</div>
 	<?php elseif($bridge_qode_sidebar == "3" || $bridge_qode_sidebar == "4"): ?>
 			<div class="<?php if($bridge_qode_sidebar == "3"):?>two_columns_33_66<?php elseif($bridge_qode_sidebar == "4") : ?>two_columns_25_75<?php endif; ?> background_color_sidebar grid2 clearfix">

@@ -16,7 +16,7 @@ if (isset($bridge_qode_options['qode_like'])) {
 }
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="post_content_holder">
+	<div class="post_content_holder" style="padding:0 10px;">
 		<?php if ( has_post_thumbnail() ) { ?>
 			<div class="post_image">
 				<a itemprop="url" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -26,9 +26,9 @@ if (isset($bridge_qode_options['qode_like'])) {
 		<?php } ?>
 		<div class="post_text">
 			<div class="post_text_inner">
-				<h2 itemprop="name" class="entry_title"><span itemprop="dateCreated" class="date entry_date updated"><?php the_time('d M'); ?><meta itemprop="interactionCount" content="UserComments: <?php echo get_comments_number(bridge_qode_get_page_id()); ?>"/></span> <a itemprop="url" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h2 itemprop="name" class="entry_title" style="line-height:.8;"><a itemprop="url" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				<div class="post_info">
-					<span class="time"><?php esc_html_e('Posted at','bridge'); ?> <?php the_time('H:i'); ?><?php esc_html_e('h','bridge'); ?></span>
+					<span class="time"><?php esc_html_e('Posted at','bridge'); ?> <?php the_time('F j, Y'); ?></span>
 
 					<?php $bridge_qode_category = get_the_category(get_the_ID()); ?>
 					<?php if(!empty($bridge_qode_category)){ ?>
