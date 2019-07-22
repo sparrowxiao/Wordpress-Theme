@@ -79,3 +79,9 @@ ul#list{
 .drop_down li#nav-menu-item-8261 .second ul li {
   width: 300px;
 }
+
+/*style of the menu item (hover)*/
+.drop_down .second .inner > ul >li > a:hover{
+  background-color:#000 !important;
+  color:#fff !important;
+}
