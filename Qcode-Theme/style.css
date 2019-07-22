@@ -1,0 +1,63 @@
+/*
+Theme Name: Bridge Child
+Theme URI: http://demo.qodeinteractive.com/bridge/
+Description: A child theme of Bridge Theme
+Author: Qode Interactive
+Author URI: http://www.qodethemes.com/
+Version: 1.0.0
+Template: bridge
+*/
+@import url("../bridge/style.css");
+
+#globe,.rules {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#globe td,
+.rules td{
+  border: 1px solid #ddd;
+  padding: 8px 0 8px 10px;
+  text-align: left;
+}
+
+#globe tr:nth-child(even),
+.rules tr:nth-child(even){background-color: #f2f2f2;}
+
+#globe tr:hover,
+.rules tr:hover {background-color: #ddd;}
+
+#globe th,
+.rules th {
+  border: 1px solid #ddd;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00539b;
+  color: white;
+}
+
+#list a{
+  color:#8224e3;
+}
+
+#list a:hover{
+  text-decoration:none;
+  color:#00539b;
+}
+#list a:active{
+  color:#8224e3;
+}
+
+#list{
+	list-style-position:outside;
+}
+ul#list{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:20px;
+}
+
+#list li{
+	margin-bottom:10px;
+}
