@@ -74,3 +74,8 @@ ul#list{
     padding-bottom:35px !important;
   }
 }
+
+/*style for dropdown style of the menu*/
+.drop_down li#nav-menu-item-8261 .second ul li {
+  width: 300px;
+}
