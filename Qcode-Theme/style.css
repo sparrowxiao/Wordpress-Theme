@@ -61,3 +61,16 @@ ul#list{
 #list li{
 	margin-bottom:10px;
 }
+
+
+/*search page style*/
+@media only screen and (min-width: 1000px){
+  div.content .container .container_inner.default_template_holder {
+     padding-bottom:50px !important;
+   }
+ }
+@media only screen and (max-width: 1000px){
+ div.content .container .container_inner.default_template_holder {
+    padding-bottom:35px !important;
+  }
+}
